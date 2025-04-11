@@ -1,17 +1,15 @@
 import java.util.Arrays;
-
+//야구게임
 public class Q1_2 {
     public static void main(String[] args) {
-        int k = 3;
+        int k = 3;//숫자 개수
         int[] arr1 = new int[k];//{1, 5, 7};
         int[] arr2 = new int[k];//{3, 5, 9};
-
         int[] shuf = new int[10];
+
         for(int i = 0; i< shuf.length ; i++) {
             shuf[i] = i;
         }
-
-
         for(int i = 0; i< shuf.length ; i++){
             int temp = 0;
             int random = (int) (Math.random() * 10);
@@ -22,9 +20,6 @@ public class Q1_2 {
         for(int i= 0 ; i < k ;  i++){
             arr1[i]=shuf[i];
         }
-
-
-
         for(int i = 0; i< shuf.length ; i++) {
             int temp = 0;
             int random = (int) (Math.random() * 10);
@@ -37,15 +32,11 @@ public class Q1_2 {
         }
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(arr2));
-//        System.out.println(Arrays.toString(arr3));
-
 
         String[] arr3 = new String[k];
         char[] arrF = new char[k];
         int[] arrFN = new int[k];
         int[] arrSB = new int[100];
-
-
 
         for(int i = 0; i< k ; i++) {
             for (int j= 0; j < k ; j++){
@@ -62,7 +53,6 @@ public class Q1_2 {
                 }
             }
         }
-
         System.out.println("============");
         System.out.println(Arrays.toString(arr3));
 
@@ -70,14 +60,9 @@ public class Q1_2 {
             arrF[i] = arr3[i].charAt(0);
             arrFN[i] = (int)arrF[i];
         }
-/*
-        System.out.println(Arrays.toString(arrF));
- */
-
         for (int i=0; i<k ; i++){
             arrSB[arrFN[i]]++;
         }
-
         System.out.printf("%dS %dB", arrSB[83], arrSB[66]);
     }
 }
