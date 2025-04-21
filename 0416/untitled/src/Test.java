@@ -1,5 +1,7 @@
 public class Test {
     public static void main(String[] args) {
-        System.out.printf("ㄴㅇㄹ\tㄹㅇㄴsfa");
+        char a = ' ';
+        char b = a++;
+        System.out.print(System.in);
     }
 }
